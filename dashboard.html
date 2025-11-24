@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HUB — Dashboard</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">HUB</div>
+    <nav class="top-nav">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="data-visualisation.html">Data Visualisation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page">
+    <aside class="left-nav">
+      <nav>
+        <ul>
+          <li class="active"><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="work-projects.html">Work Projects</a></li>
+          <li><a href="excel-projects.html">Excel Projects</a></li>
+          <li><a href="sql-projects.html">SQL Projects</a></li>
+          <li><a href="examples.html">Data visualisations examples</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>Dashboard</h1>
+      <p>Overview charts and KPIs.</p>
+
+      <section class="card">
+        <h3>Traffic & Distribution</h3>
+        <div style="display:flex;gap:20px;flex-wrap:wrap">
+          <div style="flex:1;min-width:260px">
+            <canvas id="dashboardLine" width="400" height="240"></canvas>
+          </div>
+          <div style="flex:1;min-width:260px">
+            <canvas id="dashboardDoughnut" width="400" height="240"></canvas>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2025 HUB</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/charts.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>

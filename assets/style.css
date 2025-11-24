@@ -1,0 +1,33 @@
+:root{
+  --bg:#f7f8fa;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --brand:#1f2937;
+  --accent:#2563eb;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:var(--brand)}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--card);border-bottom:1px solid #e6e9ee}
+.brand{font-weight:700}
+.top-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px;align-items:center}
+.top-nav li{display:inline-block}
+.top-nav .nav-link{color:var(--accent);text-decoration:none;font-weight:600}
+.top-nav li.active .nav-link{font-weight:700}
+.hero{padding:48px 20px;text-align:center}
+.btn{display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.page{display:flex;min-height:60vh}
+.left-nav{width:240px;background:var(--card);border-right:1px solid #e6e9ee;padding:20px}
+.left-nav ul{list-style:none;padding:0;margin:0}
+.left-nav li{margin-bottom:10px}
+.left-nav a{color:var(--brand);text-decoration:none}
+.left-nav .active a{font-weight:700;color:var(--accent)}
+.content{flex:1;padding:24px}
+.card{background:var(--card);padding:16px;border-radius:8px;border:1px solid #eef2ff;margin-top:12px}
+.note{color:var(--muted)}
+.actions{margin-top:16px}
+.site-footer{padding:12px 20px;text-align:center;color:var(--muted);font-size:14px}
+
+@media (max-width:720px){
+  .page{flex-direction:column}
+  .left-nav{width:100%;order:2}
+}

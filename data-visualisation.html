@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HUB — Data Visualisation</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">HUB</div>
+    <nav class="top-nav">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li class="active"><a class="nav-link" href="data-visualisation.html">Data Visualisation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page">
+    <aside class="left-nav">
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="work-projects.html">Work Projects</a></li>
+          <li><a href="excel-projects.html">Excel Projects</a></li>
+          <li><a href="sql-projects.html">SQL Projects</a></li>
+          <li class="active"><a href="examples.html">Data visualisations examples</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>Data Visualisation</h1>
+      <p>Showcases of data visualisation techniques, tools, and case studies: charts, dashboards, and best practices for turning data into clear, insightful visual stories.</p>
+
+      <section id="featured" class="card">
+        <h2>Featured: Visualising policy impact</h2>
+        <p>A detailed walkthrough of how to transform policy data into readable visuals, including examples and interactive approaches. This walkthrough covers: cleaning policy datasets, choosing charts, designing dashboards, and adding interactivity for exploration.</p>
+
+        <h3>Walkthrough example</h3>
+        <ol>
+          <li>Prepare the dataset: normalize fields and add time series identifiers.</li>
+          <li>Choose visual encodings: use line charts for trends and bar charts for comparisons.</li>
+          <li>Design a dashboard: combine overview + detail views with filters.</li>
+          <li>Add interactivity: hover details, filtering by policy area, and time scrubbing.</li>
+        </ol>
+
+        <p class="note">Interactive examples and dataset attachments can be added here as needed.</p>
+      </section>
+
+      <section class="card">
+        <h3>Example charts</h3>
+        <div style="display:flex;gap:20px;flex-wrap:wrap">
+          <div style="flex:1;min-width:260px">
+            <canvas id="policyLineChart" width="400" height="240"></canvas>
+          </div>
+          <div style="flex:1;min-width:260px">
+            <canvas id="policyBarChart" width="400" height="240"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="backBtn" class="btn">Back to Homepage</button>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2025 HUB</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/charts.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
